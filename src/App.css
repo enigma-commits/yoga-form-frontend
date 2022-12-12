@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+/* For the Payment or Register Form */
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    padding: 5%;
+    background: url("./Images/Yoga.jpg") no-repeat center fixed;
+    background-size: cover;
+    color: white;
+    font-style: oblique;
+    font-size: x-large;
+}
+.Name,
+.Age,
+.Email,
+.Batch {
+    padding: 1%;
+    margin: 2%;
+    margin-right: 60%;
+    margin-left: 10%;
+}
+.Submit {
+    padding: 1%;
+    margin-left: 40%;
+    margin-top: 0.5%;
+    margin-right: 40%;
+}
+body {
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.PaymentForm {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    padding: 5%;
+    color: white;
+    font-style: oblique;
+    font-size: x-large;
+    background: url("./Images/Payment.jpg") no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Submit {
+    cursor: pointer;
+}
+.Submit:hover {
+    background-color: gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* For Card Information. */
+.Card {
+    display: flex;
+    margin: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.cardNumber {
+    padding: 1%;
+    width: 14%;
+}
+.cardExpiry {
+    width: 4%;
+    margin-left: 2%;
+}
+.cardExpiryYear {
+    width: 6%;
+    margin-left: 2%;
+}
+.cardCVV {
+    width: 5%;
+    margin-left: 2%;
+}
+.cardLogo {
+    width: 5%;
+}
+.master {
+    width: 5%;
+    background: url("./Images/mastercard.png");
+    background-repeat: no-repeat;
+
+    background-size: contain;
+}
+.nocard {
+    width: 5%;
+    background: url("./Images/nocard.jpeg");
+    background-repeat: no-repeat;
+
+    background-size: contain;
+}
+.rupay {
+    width: 5%;
+    background: url("./Images/rupay.png");
+    background-repeat: no-repeat;
+
+    background-size: contain;
+}
+.visa {
+    width: 5%;
+    background: url("./Images/visa.png");
+    background-repeat: no-repeat;
+
+    background-size: contain;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Users Table */
+.Users {
+    margin: auto;
+    margin-top: 5%;
+    width: 90%;
+    padding: 1%;
+    text-align: center;
+    font-family: "Popp";
+    font-family: "Poppins", sans-serif;
+}
+.TableNameTop,
+.TableBatchTop,
+.TableEmailTop {
+    background-color: black;
+    color: white;
+}
+.TableNameTop,
+.TableName {
+    width: 60%;
+    border: 1px solid black;
+
+    text-align: center;
+}
+.TableEmailTop,
+.TableEmail {
+    width: 40%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.TableBatchTop,
+.TableBatch {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.RegisterBTN {
+    padding: 1%;
+    margin-top: 1%;
+    background-color: beige;
+    border: 0px;
+}
+.RegisterBTN:hover {
+    cursor: pointer;
+    background-color: darkmagenta;
 }

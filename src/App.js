@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import InputForm from "./Components/InputForm";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Users } from "./Components/Users";
+import Payment from "./Components/Payment.js";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let f = localStorage.getItem("Name");
+
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                        path="/register"
+                        element={f == null ? <InputForm /> : <Payment />}
+                    />
+                    <Route path="/" element={<Users />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
